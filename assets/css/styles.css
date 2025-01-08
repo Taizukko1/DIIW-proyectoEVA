@@ -42,7 +42,7 @@
 }
 
 a {
-  color: #e9d5d3;
+  color: #e9d5d3 !important;
 }
 
 body {
