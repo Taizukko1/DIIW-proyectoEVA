@@ -7,6 +7,7 @@ let images = [
 let carrusel = document.querySelector("#carrusel");
 let img = document.createElement("img");
 img.setAttribute("src", images[0]);
+img.setAttribute("alt", `Carrousel Image 0`);
 carrusel.appendChild(img);
 let i = 1;
 window.setInterval(() => {
