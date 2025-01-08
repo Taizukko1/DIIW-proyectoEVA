@@ -41,6 +41,10 @@
   margin: 0;
 }
 
+a {
+  color: #e9d5d3;
+}
+
 body {
   font-family: JetBrains;
   color: #e9d5d3;
