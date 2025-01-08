@@ -12,6 +12,7 @@ let i = 1;
 window.setInterval(() => {
   if (i > images.length - 1) i = 0;
   img.setAttribute("src", images[i]);
+  img.setAttribute("alt", "Carrousel Image");
   console.log(i);
   i++;
 }, 5000);
