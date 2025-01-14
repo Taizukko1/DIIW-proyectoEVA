@@ -1,3 +1,4 @@
+let accesibiladStatus = 0;
 let images = [
   "assets/media/img/carrusel/msg1.jpg",
   "assets/media/img/carrusel/rebuild.png",
@@ -20,6 +21,12 @@ window.setInterval(() => {
 
 function activarAccesibilidad() {
   const body = document.body;
-  body.classList.add('contrast');
+  if(accesibiladStatus === 0) {
+    body.classList.add('contrast');
+    accesibiladStatus = 1;
+  } else {
+    body.classList.remove('contrast');
+    accesibiladStatus = 0;
+  }
 
 }
