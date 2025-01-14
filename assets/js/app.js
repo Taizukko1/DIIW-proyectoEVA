@@ -17,3 +17,9 @@ window.setInterval(() => {
   console.log(i);
   i++;
 }, 5000);
+
+function activarAccesibilidad() {
+  const body = document.body;
+  body.classList.add('contrast');
+
+}
