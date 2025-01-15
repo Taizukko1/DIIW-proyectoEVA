@@ -10,10 +10,11 @@
       href="../assets/media/img/nerv.png"
       type="image/x-icon"
     />
+    <script src="../assets/js/app.js"></script>
   </head>
   <body>
-    <a href="#" role="button" onclick="activarAccesibilidad()">Modo Accesibilidad</a>
-    <a href="#section">Ir al contenido</a>
+    <a href="#section" tabindex="1">Ir al contenido</a>
+    <a href="#" role="switch" id="toggle" aria-label="toggle" tabindex="2"></a>
     <header>
       <nav>
         <div id="logo">
@@ -23,7 +24,7 @@
           <span>NERV</span>
         </div>
 
-        <ul class="nav-menu">
+        <ul class="nav-menu" aria-label="menu">
           <li class="menu-item"><a href="../index.html">HOME</a></li>
           <li class="menu-item"><a href="main.html">PROYECT[EVA]</a></li>
           <li class="menu-item active"><a href="#">CONTACT</a></li>
@@ -34,7 +35,7 @@
     <main style="display: block">
       <h1 id="section">Form</h1>
       <form method="post">
-        <h2>Contact Us</h2>
+        <h2 tabindex="0">Contact Us</h2>
         <table>
           <tr>
             <th scope="row"><label for="name">Name</label></th>
@@ -65,6 +66,11 @@
       </form>
     </main>
     <footer>
+      <ul role="menu" aria-label="menu">
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="./main.html">PROYECT[EVA]</a></li>
+        <li><a href="./pages/contact.html">CONTACT</a></li>
+      </ul>
       <p>Andoni Sanchez&copy; - 2024</p>
       <nav>
         <ul>
@@ -103,7 +109,10 @@
             </a>
           </li>
           <li>
-            <a href="https://www.youtube.com/@EvaAnalysisProject" title="YouTube">
+            <a
+              href="https://www.youtube.com/@EvaAnalysisProject"
+              title="YouTube"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
@@ -122,6 +131,5 @@
         </ul>
       </nav>
     </footer>
-    <script src="../assets/js/app.js"></script>
   </body>
 </html>

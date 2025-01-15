@@ -10,21 +10,22 @@
       href="../assets/media/img/nerv.png"
       type="image/x-icon"
     />
+    <script src="../assets/js/app.js"></script>
   </head>
 
   <body>
-    <a href="#" role="button" onclick="activarAccesibilidad()">Modo Accesibilidad</a>
-    <a href="#section">Ir al contenido</a>
+    <a href="#section" tabindex="1">Ir al contenido</a>
+    <a href="#" role="button" id="toggle" tabindex="2"></a>
     <header>
       <nav>
         <div id="logo">
           <a class="nav-header" href="index.html">
-            <img src="../assets/media/img/logo.png" alt="NERV logo"/>
+            <img src="../assets/media/img/logo.png" alt="NERV logo" />
           </a>
           <span>NERV</span>
         </div>
 
-        <ul class="nav-menu">
+        <ul class="nav-menu" aria-label="menu">
           <li class="menu-item"><a href="../index.html">HOME</a></li>
           <li class="menu-item active"><a href="#">PROYECT[EVA]</a></li>
           <li class="menu-item"><a href="contact.html">CONTACT</a></li>
@@ -156,6 +157,11 @@
     </main>
 
     <footer>
+      <ul role="menu" aria-label="menu">
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="./main.html">PROYECT[EVA]</a></li>
+        <li><a href="./contact.html">CONTACT</a></li>
+      </ul>
       <p>Andoni Sanchez&copy; - 2024</p>
       <nav>
         <ul>
@@ -194,7 +200,10 @@
             </a>
           </li>
           <li>
-            <a href="https://www.youtube.com/@EvaAnalysisProject" title="YouTube">
+            <a
+              href="https://www.youtube.com/@EvaAnalysisProject"
+              title="YouTube"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
@@ -213,6 +222,5 @@
         </ul>
       </nav>
     </footer>
-    <script src="../assets/js/app.js"></script>
   </body>
 </html>

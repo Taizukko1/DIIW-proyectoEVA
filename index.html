@@ -10,12 +10,13 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="assets/js/app.js"></script>
     <title>Nerv</title>
   </head>
 
   <body>
-    <a href="#" role="button" onclick="activarAccesibilidad()">Modo Accesibilidad</a>
-    <a href="#index">Ir al contenido</a>
+    <a href="#index" tabindex="1">Ir al contenido</a>
+    <a href="#" role="button" onclick="activarAccesibilidad()" id="toggle" tabindex="2"></a>
     <header>
       <nav>
         <div id="logo">
@@ -25,7 +26,7 @@
           <span>NERV</span>
         </div>
 
-        <ul class="nav-menu" role="menu">
+        <ul class="nav-menu" role="menu" aria-label="menu">
           <li class="menu-item active"><a href="index.html">HOME</a></li>
           <li class="menu-item"><a href="pages/main.html">PROYECT[EVA]</a></li>
           <li class="menu-item"><a href="pages/contact.html">CONTACT</a></li>
@@ -35,7 +36,7 @@
 
     <div id="carrusel" role="img"></div>
 
-    <main id="index">
+    <main id="index" tabindex="0">
       <h1>About Us</h1>
       <article>
         <div class="article-header">
@@ -86,6 +87,11 @@
     </main>
 
     <footer>
+      <ul role="menu" aria-label="menu">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="pages/main.html">PROYECT[EVA]</a></li>
+        <li><a href="pages/contact.html">CONTACT</a></li>
+      </ul>
       <p>Andoni Sanchez&copy; - 2024</p>
       <nav>
         <ul>
@@ -145,7 +151,7 @@
           </li>
         </ul>
       </nav>
+    </nav>
     </footer>
-    <script src="assets/js/app.js"></script>
   </body>
 </html>
