@@ -407,7 +407,8 @@ body footer ul li a svg:hover {
   }
   footer {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
     padding: 30px;
     background-color: #05000e;
     color: #e9d5d3;
@@ -417,6 +418,7 @@ body footer ul li a svg:hover {
     display: grid;
     grid-template-columns: repeat(3, 40px);
     justify-content: space-around;
+    justify-items: center;
   }
   footer ul li a svg {
     color: #b2acb5;
@@ -479,10 +481,6 @@ body footer ul li a svg:hover {
   }
   #carrusel {
     display: none !important;
-  }
-
-  footer {
-    display: block !important;
   }
 }
 /*Print*/
