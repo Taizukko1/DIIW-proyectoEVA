@@ -18,10 +18,12 @@ window.onload = () => {
     if (accesibiladStatus == 0) {
       body.classList.add("contrast");
       accesibiladStatus = 1;
+      toggle.innerHTML = "Modo Oscuro";
       localStorage.setItem("theme", 1);
     } else {
       body.classList.remove("contrast");
       accesibiladStatus = 0;
+      toggle.innerHTML = "Modo Claro";
       localStorage.setItem("theme", 0);
     }
   }
