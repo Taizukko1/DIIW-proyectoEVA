@@ -1,0 +1,4 @@
+User-agent: Googlebot
+Disallow: /private/
+Allow: /images/
+Sitemap: https://taizukko1.github.io/DIIW-proyectoEVA/sitemap.xml
