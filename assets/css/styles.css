@@ -262,8 +262,7 @@ body footer {
 }
 body footer ul {
   list-style: none;
-  display: grid;
-  grid-template-columns: repeat(3, 40px);
+  display: flex;
   justify-content: space-around;
 }
 body footer ul li a svg {
@@ -415,8 +414,7 @@ body footer ul li a svg:hover {
   }
   footer ul {
     list-style: none;
-    display: grid;
-    grid-template-columns: repeat(3, 40px);
+    display: flex !important;
     justify-content: space-around;
     justify-items: center;
   }
@@ -458,6 +456,16 @@ body footer ul li a svg:hover {
     margin: 0 auto;
     margin-top: 20px;
     width: 35%;
+  }
+  footer {
+    display: block !important;
+    p {
+      text-align: center;
+      margin: 1em auto;
+    }
+  }
+  #footer-menu {
+    flex-direction: column !important;
   }
 }
 /*Mobile*/
